@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String 객체</title>
+  </head>
+  <body>
+    <script>
+      // 위와 아래는 결과가 같음 ... new 생략
+      // var str1 = new String("Javascript");
+      var str1 = "Javascript";
+      var str2 = "wow";
+      var result = str1 + str2;
+      var str3 = "woow" + 111;
+
+      document.write(result + "<br>");
+      document.write(str3 + "<br>");
+
+      // 문자열 비교
+      // 값만 비교
+      document.write(("8293" == 8293) + "<br>");
+      // 값과 타입 비교
+      document.write(("8293" === 8293) + "<br>");
+      // 대소 비교
+      document.write(("A" == "a") + "<br>");
+      document.write(("A" < "B") + "<br>");
+
+      document.write(str1.length);
+    </script>
+  </body>
+</html>
