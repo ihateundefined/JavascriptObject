@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array2 객체</title>
+  </head>
+  <body>
+    <script>
+      // 배열 결합하기
+      // var 배열3 = 배열1.concat(배열2);
+      var major = new Array("컴퓨터", "전자전기", "국어국문");
+      var minor = new Array("도예", "성악", "서양화");
+      var total = major.concat(minor);
+
+      document.write(total);
+      document.write("<br>");
+
+      // 역순
+      var rvsTotal = total.reverse();
+      document.write(rvsTotal);
+    </script>
+  </body>
+</html>
