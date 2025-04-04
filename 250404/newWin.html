@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>새창열기</title>
+  </head>
+  <body>
+    <button onclick="openNewWindow()">새창열기</button>
+    <br />
+    <button onclick="closeWindow()">윈도우닫기</button>
+
+    <script>
+      var newWin;
+
+      function openNewWindow() {
+        // style ="width:400px;height:400px;" 똑같음
+        // newWin이 인스턴스 핸들임
+        newWin = window.open("test.html", "새창열기", "width=400,height=400");
+        // newWin.focus();
+      }
+
+      function closeWindow() {
+        // newWin.close();
+        window.close();
+      }
+    </script>
+  </body>
+</html>
