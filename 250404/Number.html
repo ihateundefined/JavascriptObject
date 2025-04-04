@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number 객체</title>
+  </head>
+  <body>
+    <script>
+      var str1 = new String("7777");
+      var str2 = new String("abcde");
+      var objNum = new Number("1234");
+
+      //   사용자 편의를 위해 Number 객체를 사용하지 않고도 숫자형 변수를 만들 수 있다.
+      //   var num = new Number("1234");
+      var num = 1234;
+
+      document.write(str1 + num);
+      document.write("<br />");
+      //   Number 객체는 숫자형 변수를 만들기 위한 객체이므로, 숫자형 변수와 더할 수 있다.
+      document.write(objNum + num);
+      document.write("<br />");
+      document.write(Number(str1) + "<br />");
+      document.write(Number(str2) + "<br />"); //   NaN
+    </script>
+  </body>
+</html>

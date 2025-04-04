@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function1</title>
+  </head>
+  <body>
+    <script>
+      // 1단계 함수 선언
+      // function myAdd(x, y) {
+      //   return x + y;
+      // }
+
+      // 2단계 함수 표현식
+      // Function 객체
+      var myAdd = new Function("x, y", "return x + y;");
+
+      // 3단계 함수 생성자
+      // 왜 new 연산자가 생략되는가?
+      //   var myAdd = function (x, y) {
+      // return x + y;
+      //   };
+
+      //   var myAdd = new Function("x, y", "return x + y;");
+      document.write(myAdd(5, 3)); // Outputs: 8
+    </script>
+  </body>
+</html>
