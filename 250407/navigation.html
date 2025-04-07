@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navigator</title>
+  </head>
+  <body>
+    <script>
+      //   document.write("브라우저 이름: " + navigator.appName + "<br>");
+      //   document.write("브라우저 버전: " + navigator.appVersion + "<br>");
+      //   document.write("브라우저 플랫폼: " + navigator.platform + "<br>");
+      //   document.write("에이전트: " + navigator.userAgent + "<br>");
+
+      // 반복자 사용해서 navigator 객체의 모든 속성 출력
+      for (var name in navigator) {
+        document.write(navigator[name] + "<br>");
+      }
+    </script>
+  </body>
+</html>

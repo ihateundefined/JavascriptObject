@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>screen 객체</title>
+    <!-- 브라우저 정보 객체 BOM, location, history, navigator, screen 객체 -->
+  </head>
+  <body>
+    <script>
+      document.write(screen.availWidth + "<br>"); // 사용 가능한 화면의 너비
+      document.write(screen.availHeight + "<br>"); // 사용 가능한 화면의 높이
+
+      // 반복자 사용해서 screen 객체의 모든 속성 출력
+      for (var name in screen) {
+        document.write(screen[name] + "<br>");
+      }
+    </script>
+  </body>
+</html>
