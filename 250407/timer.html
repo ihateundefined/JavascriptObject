@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>타이머</title>
+  </head>
+  <body>
+    <button onclick="timeStart()">타이머 시작</button>
+    <button onclick="timeStop()">타이머 종료</button>
+
+    <script>
+      var timerId;
+      function timeStart() {
+        alert("타이머 시작");
+        timerId = window.setTimeout(function () {
+          alert("wow");
+        }, 5000);
+      }
+
+      function timeStop(timerId) {
+        window.clearTimeout(timerId);
+        alert("oops!");
+      }
+    </script>
+  </body>
+</html>
