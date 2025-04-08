@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image 객체</title>
+  </head>
+  <body>
+    <h1>베스트 셀러</h1>
+    <img src="./KakaoTalk_20250407_154233141.jpg" />
+    <img src="./KakaoTalk_20250407_155225417.jpg" />
+    <img src="./KakaoTalk_20250407_155225417_01.jpg" />
+    <hr />
+
+    <script>
+      document.write(document.images.length + "<br>");
+
+      for (var i = 0; i < document.images.length; i++) {
+        document.images[i].border = 5;
+        document.images[i].width = 200;
+        document.images[i].height = 200;
+      }
+
+      for (var i = 0; i < document.images.length; i++) {
+        document.write(document.images[i].src + "<br>");
+        document.write(document.images[i].width + "<br>");
+        document.write(document.images[i].height + "<br>");
+      }
+    </script>
+  </body>
+</html>
