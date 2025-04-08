@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>link 객체</title>
+  </head>
+  <body>
+    <a href="https://www.naver.com" target="_blank">길벗출판사</a><br />
+    <a href="https://www.daum.net" target="_blank">yes24</a><br />
+    <hr />
+    <script>
+      for (var i = 0; i < document.links.length; i++) {
+        document.write(document.links[i].href + "<br>");
+        document.write(document.links[i].pathname + "<br>");
+        document.write(document.links[i].target + "<br>");
+      }
+    </script>
+  </body>
+</html>
