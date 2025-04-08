@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사지선다 문제</title>
+  </head>
+  <body>
+    <form name="test">
+      <h2>메모리의 주소값을 저장하는 변수는?</h2>
+      <input
+        type="radio"
+        name="exam"
+        value="1"
+        onclick="result()"
+      />포인터<br />
+      <input
+        type="radio"
+        name="exam"
+        value="2"
+        onclick="result()"
+      />클래스<br />
+      <input
+        type="radio"
+        name="exam"
+        value="3"
+        onclick="result()"
+      />오버로딩<br />
+      <input
+        type="radio"
+        name="exam"
+        value="4"
+        onclick="result()"
+      />오버라이딩<br />
+    </form>
+    <script>
+      function result() {
+        if (document.test.exam.value == 1) {
+          alert("정답입니다!");
+        } else {
+          alert("틀렸습니다!");
+        }
+
+        // if (document.test.exam[0].checked == true) {
+        //     alert("정답입니다!");
+        // } else {
+        //     alert("틀렸습니다!");
+        // }
+      }
+    </script>
+  </body>
+</html>
